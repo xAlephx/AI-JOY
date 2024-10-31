@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/main.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Products from './components/Products';
+import Layout from './components/Layout';
+import Careers from './components/Careers';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import Privacy from './components/Privacy';
+import TermsOfUse from './components/TermsOfUse';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path='/' element={<Home />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/careers' element={<Careers />} />
+          <Route path='/aboutUs' element={<AboutUs />} />
+          <Route path='/contactUs' element={<ContactUs />} />
+          <Route path='/privacy' element={<Privacy />} />
+          <Route path='/termsOfUse' element={<TermsOfUse />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
-
-export default App;
