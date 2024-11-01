@@ -3,6 +3,7 @@ import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/fre
 import { faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import './Footer.css';
 
 
 export default function Footer() {

@@ -1,14 +1,14 @@
 import React from 'react';
 import './styles/main.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import Products from './components/Products';
 import Layout from './components/Layout';
-import Careers from './components/Careers';
-import AboutUs from './components/AboutUs';
-import ContactUs from './components/ContactUs';
-import Privacy from './components/Privacy';
-import TermsOfUse from './components/TermsOfUse';
+import Home from './components/pages/Home';
+import Products from './components/pages/Products';
+import Careers from './components/pages/Careers';
+import AboutUs from './components/pages/AboutUs';
+import ContactUs from './components/pages/ContactUs';
+import Privacy from './components/pages/Privacy';
+import TermsOfUse from './components/pages/TermsOfUse';
 
 export default function App() {
   return (

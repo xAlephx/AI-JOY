@@ -1,15 +1,12 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import './Header.css'
 
-export default function Header() {
-
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
-
-
+export default function Header( { isMenuActive, handleClick, closeMobileMenu } ) {
+    const activeLink = ({isActive}) => isActive ? 'nav-links active-link' : 'nav-links';
+    
     return (
         <div className="header">
             <nav className="navbar">
@@ -19,31 +16,31 @@ export default function Header() {
                     </NavLink>
                 </div>
                 <div className="menu-icon">
-                    <FontAwesomeIcon icon={click ? faTimes : faBars} className={click ? 'cross' : 'burger' } onClick={handleClick}/>
+                    <FontAwesomeIcon icon={isMenuActive ? faTimes : faBars} className={isMenuActive ? 'cross' : 'burger' } onClick={handleClick}/>
                 </div>
-                <ul className={click ? 'nav-menu active' : 'nav-menu deactive'}>
+                <ul className={isMenuActive ? 'nav-menu active' : 'nav-menu deactive'}>
                     <li className="nav-item">
-                        <NavLink to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <NavLink to='/' className={activeLink} onClick={closeMobileMenu}>
                             Home
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/products' className='nav-links' onClick={closeMobileMenu}>
+                        <NavLink to='/products' className={activeLink} onClick={closeMobileMenu}>
                             Products
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/careers' className='nav-links' onClick={closeMobileMenu}>
+                        <NavLink to='/careers' className={activeLink} onClick={closeMobileMenu}>
                             Careers
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/aboutUs' className='nav-links' onClick={closeMobileMenu}>
+                        <NavLink to='/aboutUs' className={activeLink} onClick={closeMobileMenu}>
                             About Us
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/contactUs' className='nav-links' onClick={closeMobileMenu}>
+                        <NavLink to='/contactUs' className={activeLink} onClick={closeMobileMenu}>
                             Contact Us
                         </NavLink>
                     </li>
