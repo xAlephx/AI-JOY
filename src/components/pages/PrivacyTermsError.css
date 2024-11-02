@@ -1,0 +1,27 @@
+.privacy-wrap, .termsOfUse-wrap, .error-wrap {
+    background: #fff;
+    padding: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.error-wrap {
+    padding-block: 300px;
+}
+
+h1 {
+    font-size: 40pt;
+    margin-bottom: 24px;
+}
+
+h1.error {
+    font-size: 80pt;
+    color: red;
+    text-shadow: 5px 5px 2px black;
+}
+
+p {
+    font-size: 15pt;
+    text-align: justify;
+    max-width: 1200px;
+    margin: auto;
+}

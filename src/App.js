@@ -9,6 +9,7 @@ import AboutUs from './components/pages/AboutUs';
 import ContactUs from './components/pages/ContactUs';
 import Privacy from './components/pages/Privacy';
 import TermsOfUse from './components/pages/TermsOfUse';
+import Error from './components/pages/Error';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path='/contactUs' element={<ContactUs />} />
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/termsOfUse' element={<TermsOfUse />} />
+          <Route path='/*' element={<Error />} />
         </Route>
       </Routes>
     </>

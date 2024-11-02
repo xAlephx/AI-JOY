@@ -15,6 +15,7 @@ function HomeCards() {
               label="About us"
               path='/aboutUs'
               isFull={false}
+              isLink={true}
             />
             <CardItem
               src="./img/img-2.jpg"
@@ -22,6 +23,7 @@ function HomeCards() {
               label="Our Products"
               path='/products'
               isFull={false}
+              isLink={true}
             />
           </ul>
           <ul className='cards_items'>
@@ -31,6 +33,7 @@ function HomeCards() {
               label="Careers"
               path='/careers'
               isFull={false}
+              isLink={true}
             />
             <CardItem
               src="./img/img-4.jpg"
@@ -38,6 +41,7 @@ function HomeCards() {
               label="Contacts"
               path='/contactUs'
               isFull={false}
+              isLink={true}
             />
           </ul>
         </div>
