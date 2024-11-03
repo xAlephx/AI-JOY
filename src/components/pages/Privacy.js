@@ -1,5 +1,5 @@
 import React from "react";
-import './PrivacyTermsError.css'
+import './Pages.css'
 
 export default function Privacy() {
     return (

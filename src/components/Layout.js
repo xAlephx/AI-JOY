@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Outlet } from 'react-router-dom'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 
 function Layout() {
     const [isMenuActive, setIsMenuActive] = useState(false);
@@ -17,7 +17,7 @@ function Layout() {
         if (isMenuActive)
             return null
         else {
-            return <><Outlet /><Footer /></>
+            return <><ScrollRestoration /><Outlet /><Footer /></>
         }
     }
 

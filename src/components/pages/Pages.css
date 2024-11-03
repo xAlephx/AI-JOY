@@ -1,4 +1,4 @@
-.privacy-wrap, .termsOfUse-wrap, .error-wrap {
+.privacy-wrap, .termsOfUse-wrap, .error-wrap, .aboutUs-wrap, .contactUs-wrap {
     background: #fff;
     padding: 50px;
     font-family: "Montserrat", sans-serif;
@@ -19,9 +19,25 @@ h1.error {
     text-shadow: 5px 5px 2px black;
 }
 
-p {
+h1.workers, h1.cooperations {
+    margin-top: 20px;
+}
+
+p, h2, .contact {
     font-size: 15pt;
     text-align: justify;
     max-width: 1200px;
     margin: auto;
+}
+
+h2.contacts {
+    font-size: 30pt;
+    font-weight: 800;
+    margin-block: 15px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
