@@ -99,6 +99,7 @@ h1 {
 }
 
 .circle_cards_item_title {
+  margin: 0;
   font-weight: 800;
 }
 

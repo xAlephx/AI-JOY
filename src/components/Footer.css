@@ -78,6 +78,7 @@
   
   .footer-link-wrap {
     display: flex;
+    align-items: start;
   }
   
   .footer-link-items {

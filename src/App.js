@@ -18,7 +18,6 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        errorElement: <Error />,
       },
       { index: true, element: <Home /> },
       { path: '/products', element: <Products /> },
@@ -27,6 +26,7 @@ const router = createBrowserRouter([
       { path: '/contactUs', element: <ContactUs /> },
       { path: '/privacy', element: <Privacy /> },
       { path: '/termsOfUse', element: <TermsOfUse /> },
+      { path: '/*', element: <Error />}
     ]
   }
 ])
