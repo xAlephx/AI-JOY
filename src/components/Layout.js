@@ -17,7 +17,10 @@ function Layout() {
         if (isMenuActive)
             return null
         else {
-            return <><ScrollRestoration /><Outlet /><Footer /></>
+            return <><ScrollRestoration />
+            <Outlet />
+            <Footer />
+            </>
         }
     }
 

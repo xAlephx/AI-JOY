@@ -55,8 +55,9 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.7rem;
     height: 80%;
+    overflow: hidden;
   }
   
   .nav-links:hover {
@@ -117,6 +118,7 @@
       text-align: center;
       width: 100%;
       display: table;
+      padding-inline: 0px;
     }
   
     .nav-links:hover {

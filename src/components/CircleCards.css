@@ -75,7 +75,7 @@ h1 {
   left: 0;
   display: block;
   width: 100%;
-  object-fit: scale-down;
+  object-fit: contain;
   transition: all 0.2s linear;
 }
 
@@ -112,5 +112,23 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .circle_cards_item {
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .circle_cards_item_img_wrap {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+  }
+
+  .circle_cards_item_text_wrap {
+    min-width: 50px;
+    min-height: 100px;
+  }
+
+  .circle_cards_item.shrink {
+    max-width: 200px;
   }
 }
