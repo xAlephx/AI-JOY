@@ -1,4 +1,8 @@
-.privacy-wrap, .termsOfUse-wrap, .error-wrap, .aboutUs-wrap, .contactUs-wrap {
+.privacy-wrap,
+.termsOfUse-wrap,
+.error-wrap,
+.aboutUs-wrap,
+.contactUs-wrap {
     background: #fff;
     padding: 50px;
     font-family: "Montserrat", sans-serif;
@@ -20,11 +24,14 @@ h1.error {
     text-shadow: 5px 5px 2px black;
 }
 
-h1.workers, h1.cooperations {
+h1.workers,
+h1.cooperations {
     margin-top: 20px;
 }
 
-p, h2, .contact {
+p,
+h2,
+.contact {
     font-size: 15pt;
     text-align: justify;
     max-width: 1200px;
@@ -39,12 +46,54 @@ h2.contacts {
 
 .contact {
     display: flex;
-    align-items: center;
     gap: 8px;
+    padding-block: 3px;
+}
+
+.contact.link {
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px black;
+    padding-left: 15px;
+}
+
+.social-icon {
+    width: 30px;
+}
+
+.contact.link.facebook {
+    color: rgb(77, 77, 192);
+}
+
+.contact.link.facebook:hover {
+    color: rgb(47, 47, 141);
+}
+
+.contact.link.linkedin{
+    color: rgb(82, 196, 245);
+}
+
+.contact.link.linkedin:hover {
+    color: rgb(17, 96, 125);
+}
+
+.contact.link.instagram {
+    color: rgb(190, 91, 207);
+}
+
+.contact.link.instagram:hover {
+    color: rgb(103, 26, 120);
+}
+
+.contact.link.youtube {
+    color: rgb(197, 17, 17);
+}
+
+.contact.link.youtube:hover {
+    color: rgb(149, 18, 1);
 }
 
 @media only screen and (max-width: 768px) {
     h1.error {
         font-size: 12vw;
     }
-  }
+}

@@ -19,7 +19,7 @@ img {
 }
 
 .hero-container .hero-image {
-    background: url('../../public/img/hero-art.jpg') center center/cover no-repeat;
+    background: url('../../public/img/hero-art.avif') center center/cover no-repeat;
     height: 100%;
     width: 100%;
 }

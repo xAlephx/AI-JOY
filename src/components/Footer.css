@@ -134,35 +134,35 @@
     transition: 0.5s ease-out;
   }
   
-  .facebook {
+  .social-icon-link.facebook {
     color: rgb(77, 77, 192);
   }
   
-  .facebook:hover {
+  .social-icon-link.facebook:hover {
     color: rgb(47, 47, 141);
   }
   
-  .linkedin {
+  .social-icon-link.linkedin {
     color: rgb(82, 196, 245);
   }
   
-  .linkedin:hover {
+  .social-icon-link.linkedin:hover {
     color: rgb(17, 96, 125);
   }
   
-  .instagram {
+  .social-icon-link.instagram {
     color: rgb(190, 91, 207);
   }
   
-  .instagram:hover {
+  .social-icon-link.instagram:hover {
     color: rgb(103, 26, 120);
   }
   
-  .youtube {
+  .social-icon-link.youtube {
     color: rgb(197, 17, 17);
   }
   
-  .youtube:hover {
+  .social-icon-link.youtube:hover {
     color: rgb(149, 18, 1);
   }
   

@@ -10,7 +10,7 @@ function HomeCards() {
         <div className='cards_wrapper'>
           <ul className='cards_items'>
             <CardItem
-              src="./img/img-1.jpg"
+              src="./img/img-1.avif"
               text="You can learn more about our company"
               label="About us"
               path='/aboutUs'
@@ -18,7 +18,7 @@ function HomeCards() {
               isLink={true}
             />
             <CardItem
-              src="./img/img-2.jpg"
+              src="./img/img-2.avif"
               text="We made a lot of profit projects"
               label="Our Products"
               path='/products'
